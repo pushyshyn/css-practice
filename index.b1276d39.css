@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.people {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  width: 460px;
+  margin-block: 30px;
+  margin-inline: auto;
+  display: grid;
+}
+
+@media (width >= 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 1fr);
+    width: 920px;
+  }
+}
+
+.person {
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  position: relative;
+}
+
+.person:hover {
+  z-index: 1;
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+.person:hover .extra {
+  transition-duration: 1s;
+  transition-delay: 1s;
+  display: block;
+}
+
+.extra {
+  border-radius: 60px 0 0;
+  width: 240px;
+  height: 277.2px;
+  padding: 10px;
+  display: none;
+  position: absolute;
+}
+
+img {
+  border-radius: 200px;
+  width: 200px;
+  height: 231px;
+}
+/*# sourceMappingURL=index.b1276d39.css.map */
